@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/primary.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/form.css">
+
+  <link rel="stylesheet" href="/css/user.css">
+  <title>Login - Nemi.dev</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <nav id="TopNav">
+    <div class="NavLayout">
+      <div class="NavLogo">
+        <a href="/"><i data-feather="box"></i></a>
+      </div>
+      <div class="NavLinks">
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+        <a class="UseButton" href="/login.html">Login</a>
+        <a class="UseButton" href="/signup.html">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  <div class="CenterBox UseNav">
+    <div class="LoginView">
+      <h1>LOGIN</h1>
+      <div class="Card">
+        <form action="#" method="post">
+          <div class="FormLayout">
+            <div class="Floating">
+              <input type="email" id="email" name="email" placeholder="email" required autofocus>
+              <label for="email">Email</label>
+            </div>
+            <div class="Floating">
+              <input type="password" id="password" name="password" placeholder="password" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="Field">
+              <input type="checkbox" name="remember" id="remember">
+              <label for="remember">Remember Me</label>
+            </div>
+            <input type="submit" value="Login!">
+            <a href="/signup.html" class="UseButton">SIGN UP</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script>feather.replace()</script>
+<script src="/js/login.js"></script>
+</html>

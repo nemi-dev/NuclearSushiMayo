@@ -1,0 +1,132 @@
+:root {
+  --blue_color: rgb(40, 205, 255);
+  --blue_shadow_color: rgba(40, 205, 255, 0.5);
+  --green_color: rgb(0, 255, 160);
+  --green_shadow_color: rgba(0, 255, 160, 0.5);
+  --red_color: rgb(255, 56, 72);
+  --red_shadow_color: rgba(255, 56, 72, 0.5);
+  
+  --nav_height: 50px;
+  
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --blue_color: rgb(30, 179, 200);
+    --blue_shadow_color: rgba(30, 179, 200, 0.5);
+    --green_color: rgb(15, 163, 82);
+    --green_shadow_color: rgba(15, 163, 82, 0.5);
+    --red_color: rgb(216, 41, 41);
+    --red_shadow_color: rgba(216, 41, 41, 0.5);
+  }
+}
+
+
+input:is(
+  [type="text"],
+  [type="password"],
+  [type="email"],
+  [type="url"],
+  [type="tel"],
+  [type="number"],
+  [type="search"],
+  [type="datetime-local"]),
+textarea {
+
+  transition: all 0.1s;
+
+  
+  &:focus {
+    border-color: var(--blue_color);
+    box-shadow: 0 0 5px var(--blue_shadow_color);
+  }
+  
+  &:required:valid {
+    border-color: var(--green_color);
+    box-shadow: 0 0 5px var(--green_shadow_color);
+  }
+
+  &.issued {
+    border-color: var(--red_color);
+    box-shadow: 0 0 5px var(--red_shadow_color);
+  }
+
+  &:optional:invalid {
+    border-color: var(--red_color);
+    box-shadow: 0 0 5px var(--red_shadow_color);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Floating {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.Floating :is(input, label) {
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  padding: 1rem .75rem;
+}
+
+.Floating input {
+  width: 100%;
+  border: 1px solid var(--border_color);
+  
+  box-sizing: border-box;
+  line-height: 1.25;
+  margin-bottom: -1px;
+  height: calc(3.5rem + calc(var(--bs-border-width, 1px)* 2));
+  min-height: calc(3.5rem + calc(var(--bs-border-width, 1px)* 2));
+  line-height: 1.25;
+}
+
+.Floating input:is(:focus, :not(:placeholder-shown)) {
+  padding-top: 1.625rem;
+  padding-bottom: .625rem;
+}
+
+
+.Floating input::placeholder {
+  opacity: 0;
+}
+
+
+
+.Floating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  text-align: start;
+  pointer-events: none;
+  transition: all 0.1s ease-out;
+  transform-origin: 0 0;
+}
+
+.Floating input:focus + label,
+.Floating input:not(:placeholder-shown) + label {
+  transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+  opacity: 0.5;
+}

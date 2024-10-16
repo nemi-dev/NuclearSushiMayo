@@ -1,0 +1,19 @@
+.LoginView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FormLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.Field {
+  padding-block: .5rem;
+}

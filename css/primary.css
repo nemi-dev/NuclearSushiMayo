@@ -11,17 +11,24 @@
   --button_hover_color: rgb(192, 192, 192);
   --button_text: black;
   --button_border_color: white;
+
+  --border_color: rgba(255, 255, 255, 0.7);
+  --box_shadow_color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (prefers-color-scheme: light) {
   :root {
     --text: black;
     --back: white;
-    --back_alt: rgb(225 ,225, 225);
+    --back_alt: rgb(225, 225, 225);
     --button_color: rgb(32, 32, 32);
     --button_hover_color: rgb(64, 64, 64);
-    --button_text: white;      
+    --button_text: white;
     --button_border_color: black;
+
+    --border_color: rgba(0, 0, 0, 0.7);
+    --box_shadow_color: rgba(0, 0, 0, 0.5);
+
   }
 }
 
@@ -83,7 +90,39 @@ header.HeroTitle h2 {
   }
 }
 
-a.UseButton, button {
+
+a {
+  color: rgb(96, 255, 215);
+  text-decoration: none;
+  transition: color 0.1s ease-in;
+
+  &:hover {
+    color: rgb(204, 115, 255);
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+
+
+  a {
+    color: rgb(18, 177, 156);
+    text-decoration: none;
+    transition: color 0.1s ease-in;
+
+    &:hover {
+      color: rgb(162, 0, 255);
+    }
+  }
+
+}
+
+a.UseButton,
+button,
+input[type=submit] {
+  text-align: center;
+  font-size: inherit;
+  font-family: inherit;
   text-decoration: none;
   display: inline-block;
   padding: 6px 12px;
@@ -91,11 +130,38 @@ a.UseButton, button {
   background-color: var(--button_color);
   border: 1px solid var(--button_border_color);
   border-radius: 4px;
-  
+
   box-sizing: border-box;
 }
 
-:is(a.UseButton, button):hover {
+:is(a.UseButton, button, input[type=submit]):hover {
   background-color: var(--button_hover_color);
 }
 
+.CenterBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100svh;
+}
+
+.CenterBox.UseNav {
+  height: calc(100svh - 50px);
+}
+
+.Card {
+  padding: 8px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  background-color: var(--back);
+  box-shadow: 3px 3px 6px var(--box_shadow_color);
+  border: 1px solid var(--border_color, #727d80bb);
+  transition: box-shadow 0.1s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
