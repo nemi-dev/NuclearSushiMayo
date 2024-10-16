@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Hellmann's/Best Foods",
+    "type": "mayonnaise",
+    "hot": true,
+    "price": 3.5,
+    "img": "/img/products/mayo/hellmannsbestfoods.jpg",
+    "description": "Offers a variety including Real Mayonnaise, Light Mayonnaise, and Organic options."
+  },
+  {
+    "name": "Kraft",
+    "type": "mayonnaise",
+    "hot": true,
+    "price": 4.0,
+    "img": "/img/products/mayo/kraft.jpg",
+    "description": "Known for Real Mayo, Deluxe Mayonnaise, and Extra Heavy Mayonnaise."
+  },
+  {
+    "name": "Duke's",
+    "type": "mayonnaise",
+    "hot": true,
+    "price": 3.5,
+    "img": "/img/products/mayo/dukes.jpg",
+    "description": "Features Real Mayonnaise and various flavored options like Bacon & Tomato."
+  },
+  {
+    "name": "Kewpie",
+    "type": "mayonnaise",
+    "hot": false,
+    "price": 5.0,
+    "img": "/img/products/mayo/kewpie.jpg",
+    "description": "Famous for its Japanese-style mayonnaise, known for its umami flavor."
+  },
+  {
+    "name": "Blue Plate",
+    "type": "mayonnaise",
+    "hot": false,
+    "price": 3.0,
+    "img": "/img/products/mayo/blueplate.jpg",
+    "description": "Provides Real Mayonnaise, Light Mayonnaise, and Spicy Mayonnaise."
+  },
+  {
+    "name": "Primal Kitchen",
+    "type": "mayonnaise",
+    "hot": false,
+    "price": 4.99,
+    "img": "/img/products/mayo/primalkitchen.jpg",
+    "description": "Offers avocado oil-based mayonnaises that are often vegan."
+  },
+  {
+    "name": "Sir Kensington's",
+    "type": "mayonnaise",
+    "hot": false,
+    "price": 4.49,
+    "img": "/img/products/mayo/sirkensingtons.jpg",
+    "description": "Known for its Classic Mayonnaise and several flavored varieties."
+  },
+  {
+    "name": "Follow Your Heart",
+    "type": "mayonnaise",
+    "hot": false,
+    "price": 4.99,
+    "img": "/img/products/mayo/followyourheart.jpg",
+    "description": "Features vegan mayonnaise options."
+  },
+  {
+    "name": "Miracle Whip",
+    "type": "mayonnaise",
+    "hot": false,
+    "price": 3.5,
+    "img": "/img/products/mayo/miraclewhip.jpg",
+    "description": "Although not technically mayonnaise, it is a popular mayonnaise-like dressing."
+  },
+  {
+    "name": "Maguro",
+    "type": "sushi",
+    "img": "/img/products/sushi/maguro.jpg",
+    "hot": true,
+    "price": 7.00,
+    "description": "One of the most popular toppings, often served as raw or seared tuna. It can be further classified into parts like akami (lean part) and otoro (fatty belly)."
+  },
+  {
+    "name": "Sake",
+    "type": "sushi",
+    "img": "/img/products/sushi/sake.jpg",
+    "hot": true,
+    "price": 7.00,
+    "description": "Fresh salmon is another favorite for nigiri, known for its rich flavor and smooth texture."
+  },
+  {
+    "name": "Ebi",
+    "type": "sushi",
+    "img": "/img/products/sushi/ebi.jpg",
+    "hot": true,
+    "price": 5.00,
+    "description": "Usually boiled or steamed, ebi is often served with the tail intact for presentation."
+  },
+  {
+    "name": "Tamago",
+    "type": "sushi",
+    "img": "/img/products/sushi/tamago.jpg",
+    "hot": false,
+    "price": 4.00,
+    "description": "A sweet, layered omelet is sliced and served on top of rice, often enjoyed as a milder option."
+  },
+  {
+    "name": "Unagi",
+    "type": "sushi",
+    "img": "/img/products/sushi/unagi.jpg",
+    "hot": false,
+    "price": 8.00,
+    "description": "Grilled eel glazed with a sweet soy-based sauce. It's typically served cooked, making it a safe option for those who prefer not to eat raw fish."
+  },
+  {
+    "name": "Ikura",
+    "type": "sushi",
+    "img": "/img/products/sushi/ikura.jpg",
+    "hot": false,
+    "price": 8.00,
+    "description": "Salmon roe is served on rice, providing a burst of flavor with each bite. The bright orange color adds visual appeal."
+  },
+  {
+    "name": "Ika",
+    "type": "sushi",
+    "img": "/img/products/sushi/ika.jpg",
+    "hot": false,
+    "price": 6.00,
+    "description": "Thinly sliced raw squid has a slightly chewy texture and is often served with a touch of wasabi."
+  },
+  {
+    "name": "Hirame",
+    "type": "sushi",
+    "img": "/img/products/sushi/hirame.jpg",
+    "hot": false,
+    "price": 7.00,
+    "description": "Thinly sliced flounder has a delicate flavor and is often appreciated for its texture."
+  },
+  {
+    "name": "Aji",
+    "type": "sushi",
+    "img": "/img/products/sushi/aji.jpg",
+    "hot": false,
+    "price": 5.50,
+    "description": "Served as a whole fish, it has a slightly stronger taste and is typically marinated before serving."
+  },
+  {
+    "name": "Tako",
+    "type": "sushi",
+    "img": "/img/products/sushi/tako.jpg",
+    "hot": false,
+    "price": 6.00,
+    "description": "Boiled octopus is sliced thinly and served, often with a slight chewiness."
+  },
+  {
+    "name": "Hotate",
+    "type": "sushi",
+    "img": "/img/products/sushi/hotate.jpg",
+    "hot": false,
+    "price": 9.00,
+    "description": "Sweet, tender scallops are often served raw, showcasing their delicate flavor."
+  },
+  {
+    "name": "Kampachi",
+    "type": "sushi",
+    "img": "/img/products/sushi/kanpachi.jpg",
+    "hot": false,
+    "price": 8.00,
+    "description": "A rich, flavorful fish that is appreciated for its fatty texture."
+  }
+]

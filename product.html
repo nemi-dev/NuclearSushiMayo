@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Nuclear Sushi Mayo</title>
+  <link rel="stylesheet" href="/css/primary.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/product.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <nav id="TopNav">
+    <div class="NavLayout">
+      <div class="NavLogo">
+        <a href="/"><i data-feather="box"></i></a>
+      </div>
+      <div class="NavLinks">
+        <a href="/product.html">Products</a>
+        <a href="#">Contact</a>
+        <a class="UseButton" href="/login.html">Login</a>
+        <a class="UseButton" href="/signup.html">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section>
+      <div class="MainProductWrapper">
+        <h1>Products</h1>
+        <div class="MainProductLayout">
+          <aside>
+            <div class="Card">
+              <section class="ProductFilterGroup">
+                <h2>Product Type</h2>
+                <div class="CheckGroup">
+                  <input type="checkbox" class="TypeSelector" name="mayo" value="mayonnaise" id="SelectMayo">
+                  <label for="SelectMayo">Mayonnaise</label>
+                </div>
+                <div class="CheckGroup">
+                  <input type="checkbox" class="TypeSelector" name="sushi" value="sushi" id="SelectSushi">
+                  <label for="SelectSushi">Sushi</label>
+                </div>
+                <div class="CheckGroup">
+                  <input type="checkbox" class="TypeSelector" name="nuclear" value="nuclear" id="SelectNuclear">
+                  <label for="SelectNuclear">Nuclear</label>
+                </div>
+              </section>
+              <section class="ProductFilterGroup">
+                <h2>Trends</h2>
+                <div class="CheckGroup">
+                  <input type="checkbox" name="hot" id="SelectHotOnly">
+                  <label for="SelectHotOnly">Trending</label>
+                </div>
+              </section>
+              <section class="ProductFilterGroup">
+                <h2>Price</h2>
+                <div class="CheckGroup">
+                  <input type="checkbox" name="minprice" id="UseMinPrice">
+                  <label for="UseMinPrice">More than</label>
+                  <span id="MinPriceView">$0.00</span>
+                </div>
+                <div>
+                  <input type="range" name="price" id="SelectMinPrice"  min="0" max="10" step="0.01" value="0" disabled>
+                </div>
+                <div class="CheckGroup">
+                  <input type="checkbox" name="maxprice" id="UseMaxPrice">
+                  <label for="UseMaxPrice">Less than</label>
+                  <span id="MaxPriceView">$10.00</span>
+                </div>
+                <div>
+                  <input type="range" name="price" id="SelectMaxPrice"  min="0" max="10" step="0.01" value="10" disabled>
+                </div>
+              </section>
+            </div>
+          </aside>
+          <section>
+            <div id="ProductList">
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <div class="Brand">
+        <i data-feather="box"></i>
+      </div>
+      <div class="LinkGroup">
+        <a target="_blank" rel="noreferrer noopener" href="//youtube.com/@_nemi_"><i data-feather="youtube"></i></a>
+        <a target="_blank" rel="noreferrer noopener" href="//x.com/nemi_ml"><i data-feather="twitter"></i></a>
+        <a target="_blank" rel="noreferrer noopener" href="//github.com/nemi-dev"><i data-feather="github"></i></a>
+      </div>
+    </section>
+    <section class="UseBlockLink">
+      <h1>
+        <a href="#">Sushi</a>
+      </h1>
+      <ul>
+        <li><a href="#">Best Sushi Spots</a></li>
+        <li><a href="#">Order Fresh Sushi</a></li>
+        <li><a href="#">Sushi Recipes</a></li>
+        <li><a href="#">Sushi Restaurant Near Me</a></li>
+        <li><a href="#">Learn Sushi Making</a></li>
+        <li><a href="#">Sushi Menu</a></li>
+        <li><a href="#">Sushi Deals & Offers</a></li>
+        <li><a href="#">Sushi Delivery</a></li>
+        <li><a href="#">Sushi Specials</a></li>
+        <li><a href="#">Find Sushi Chefs</a></li>
+      </ul>
+    </section>
+    <section class="UseBlockLink">
+      <h1>
+        <a href="#">Mayo</a>
+      </h1>
+      <ul>
+        <li><a href="#">Homemade Mayonnaise Recipe</a></li>
+        <li><a href="#">Best Mayonnaise Brands</a></li>
+        <li><a href="#">Mayonnaise-Based Sauces</a></li>
+        <li><a href="#">Mayo Health Benefits</a></li>
+        <li><a href="#">Classic Mayo Sandwiches</a></li>
+        <li><a href="#">Mayo vs. Miracle Whip</a></li>
+        <li><a href="#">Mayonnaise Dips & Spreads</a></li>
+        <li><a href="#">Buy Gourmet Mayonnaise</a></li>
+        <li><a href="#">Vegan Mayonnaise Alternatives</a></li>
+        <li><a href="#">Mayonnaise Nutrition Facts</a></li>
+      </ul>
+    </section>
+    <section class="UseBlockLink">
+      <h1>
+        <a href="#">Nuclear</a>
+      </h1>
+      <ul>
+        <li><a href="#">Nuclear Energy Explained</a></li>
+        <li><a href="#">Nuclear Safety Guidelines</a></li>
+        <li><a href="#">The Nuclear Industry</a></li>
+        <li><a href="#">Nuclear Power Plants</a></li>
+        <li><a href="#">Nuclear Waste Management</a></li>
+        <li><a href="#">Nuclear Physics Basics</a></li>
+        <li><a href="#">Nuclear Weapons History</a></li>
+        <li><a href="#">Nuclear Fusion Research</a></li>
+        <li><a href="#">Nuclear Regulations</a></li>
+        <li><a href="#">Future of Nuclear Technology</a></li>
+      </ul>
+    </section>
+    <section>
+      This site is only for demonstration. Any copyright claims would be accepted.
+    </section>
+  </footer>
+  <script>feather.replace()</script>
+  <script src="/js/product.js"></script>
+</body>
+</html>

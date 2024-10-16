@@ -1,6 +1,3 @@
-:root {
-  --use_ideal_clamp: clamp(300px, 75vw, 1000px);
-}
 
 .UseAlt {
   background-color: var(--back_alt);
