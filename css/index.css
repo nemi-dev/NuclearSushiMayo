@@ -1,0 +1,103 @@
+:root {
+  --use_ideal_clamp: clamp(300px, 75vw, 1000px);
+}
+
+.UseAlt {
+  background-color: var(--back_alt);
+}
+
+main > section {
+  min-height: 320px;
+}
+
+main > section > .ParaLayout {
+  width: var(--use_ideal_clamp);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  /* margin: 24px; */
+  padding-block: 24px;
+  gap: 24px;
+  /* display: grid; */
+  /* grid-auto-flow: row; */
+  /* grid-template-columns: 300px 1fr; */
+}
+
+main > section.UseAlt > .ParaLayout {
+  flex-direction: row-reverse;
+}
+
+main > section figure {
+  flex-basis: 300px;
+
+  flex-shrink: 0;
+  margin: 0;
+}
+
+main > section article {
+  flex-grow: 1;
+}
+
+main > section img {
+  max-width: 100%;
+}
+
+main > section .VertLayout {
+
+}
+
+
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+section h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-weight: 300;
+}
+
+.MarqueeContainer {
+  width: 100%;         /* Full-width container */
+  overflow: hidden;     /* Hide the overflowing images */
+  /* background-color: #f0f0f0; Optional: background color */
+  white-space: nowrap;  /* Prevent line breaks */
+  width: var(--use_ideal_clamp);
+  margin-inline: auto;
+}
+
+.Marquee {
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: row;
+  padding-right: 32px;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  animation: scroll 15s linear infinite; /* Infinite scrolling animation */
+}
+
+.Marquee img {
+  width: 150px;       /* Set the width of each image */
+  /* margin-right: 20px; Add spacing between images */
+  vertical-align: middle; /* Align images vertically */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);  /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main > :is(section, section.UseAlt) .ParaLayout {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

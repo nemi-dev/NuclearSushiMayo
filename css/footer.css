@@ -1,0 +1,44 @@
+footer {
+  padding: 32px;
+  padding-bottom: 200px;
+  /* display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 1fr;
+  grid-auto-columns: fit-content(300px); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer > * {
+  flex: 1 1 300px;
+  padding-bottom: 5em;
+}
+
+footer a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+footer .Brand svg {
+  width: 32px;
+  height: 32px;
+}
+
+footer h1 {
+  margin-block: 0.25rem;
+  text-align: start;
+  font-size: 1.2rem;
+}
+
+footer a {
+  font-family: "Poppins", sans-serif;
+  margin-block: 0.1rem;
+  display: block;
+}
+
+footer :is(ul, li) {
+  display: block;
+  margin: 0;
+  padding: 0;
+}

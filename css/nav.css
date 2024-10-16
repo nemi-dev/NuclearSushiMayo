@@ -1,0 +1,48 @@
+#TopNav {
+  position: sticky;
+  top: 0;
+
+  background-color: var(--back);
+  z-index: 9;
+  min-height: 50px;
+  padding-inline: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  box-sizing: border-box;
+}
+
+#TopNav a:not(.UseButton) {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.NavLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.NavLogo {
+  display: flex;
+}
+
+.NavLogo a {
+  height: 32px;
+}
+
+.NavLogo svg {
+  width: 32px;
+  height: 32px;
+}
+
+.NavLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+

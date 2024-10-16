@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  color-scheme: dark light;
+
+  --text: white;
+  --back: black;
+  --back_alt: rgb(32, 32, 32);
+  --button_color: rgb(225, 225, 225);
+  --button_hover_color: rgb(192, 192, 192);
+  --button_text: black;
+  --button_border_color: white;
+}
+
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --text: black;
+    --back: white;
+    --back_alt: rgb(225 ,225, 225);
+    --button_color: rgb(32, 32, 32);
+    --button_hover_color: rgb(64, 64, 64);
+    --button_text: white;      
+    --button_border_color: black;
+  }
+}
+
+:root {
+  color: var(--text);
+  background-color: var(--back);
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header.HeroTitle {
+  font-family: "Poppins", sans-serif;
+  min-height: 360px;
+  position: relative;
+  clip-path: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header.HeroTitle .HeroCaption {
+  text-align: center;
+}
+
+header.HeroTitle h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+header.HeroTitle h2 {
+  margin: 0;
+  font-weight: 200;
+}
+
+.HeroTitleBack {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  filter: brightness(0.3);
+}
+
+@media screen and (prefers-color-scheme: light) {
+  .HeroTitleBack {
+    filter: contrast(0.25) brightness(1.5);
+  }
+}
+
+a.UseButton, button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  color: var(--button_text);
+  background-color: var(--button_color);
+  border: 1px solid var(--button_border_color);
+  border-radius: 4px;
+  
+  box-sizing: border-box;
+}
+
+:is(a.UseButton, button):hover {
+  background-color: var(--button_hover_color);
+}
+
